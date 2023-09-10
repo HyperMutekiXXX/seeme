@@ -20,3 +20,7 @@ func (h *Hello) HelloSeeme(ctx *gin.Context) {
 	obj.GetHelloSeeme()
 	h.Success(ctx, "success", obj)
 }
+
+func (h *Hello) HelloWorld(ctx *gin.Context)  {
+	h.Success(ctx, "hello world", nil)
+}
